@@ -65,6 +65,7 @@ def organize_schools(schools)
         final[city] = [school]
       else
         final[city] << school
+      end
     end
   end
   final
