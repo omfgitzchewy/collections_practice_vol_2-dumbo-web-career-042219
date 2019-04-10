@@ -58,6 +58,7 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-
-  schools
+  schools.each do |element|
+    return element
+  end
 end
