@@ -56,3 +56,8 @@ def find_cool(cool)
   end
   final
 end
+
+def organize_schools(schools)
+  
+
+end
