@@ -50,6 +50,7 @@ def find_cool(cool)
     element.each do |k,v|
       if v == "cool"
         return element
+      end
     end
   end
 end
