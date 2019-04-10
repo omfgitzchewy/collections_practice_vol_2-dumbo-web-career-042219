@@ -48,8 +48,8 @@ end
 def find_cool(cool)
   cool.each do |element|
     element.each do |k,v|
-
+      if v == "cool"
+        return element
     end
   end
-  return cool
 end
