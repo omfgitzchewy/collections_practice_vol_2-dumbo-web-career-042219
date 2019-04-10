@@ -62,7 +62,11 @@ def organize_schools(schools)
   schools.each do |school, hash|
     hash.each do |location, city|
       final[city] = []
-      final[city][] << school
+      schools.each do |k,v|
+        if school == v[:location]
+          final[city] << v
+        end
+      end
     end
   end
   final
