@@ -46,5 +46,10 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
-  
+  cool.each do |element|
+    element.each do |k,v|
+
+    end
+  end
+  return cool
 end
