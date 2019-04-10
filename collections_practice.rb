@@ -61,7 +61,7 @@ def organize_schools(schools)
   final = Hash.new
   schools.map do |school, hash|
     hash.map do |location, city|
-      if final.key?(city)
+      unless final.key?(city)
         final[city] = [school]
       else
         final[city] << school
