@@ -61,13 +61,11 @@ def organize_schools(schools)
   final = Hash.new
   schools.each do |school, hash|
     hash.each do |location, city|
-      # if final.key?(city) == false
-      #   final[city] = [school]
-      # else
-      #   final[city] << school
-      # end
-      final[city] = []
-      final[city] << school
+      if final.key?(city) == false
+        final[city] = [school]
+      else
+        final[city] << school
+      end
     end
   end
   final
