@@ -54,4 +54,5 @@ def find_cool(cool)
       end
     end
   end
+  final
 end
